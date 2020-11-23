@@ -1,0 +1,1016 @@
+.cleaner{
+    clear: both;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Icon 1 */
+.navrisponsive{
+    display: none;
+}
+@media only screen and(max-width: 800px){
+    .header{
+        display: none !important;
+    }
+    .navrisponsive{
+        display: inline;
+    }
+    .animated-icon1, .animated-icon2, .animated-icon3 {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin: 0px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        }
+        
+        .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        }
+        
+        .animated-icon1 span {
+        background: #e65100;
+        }
+        
+        .animated-icon2 span {
+        background: #e3f2fd;
+        }
+        
+        .animated-icon3 span {
+        background: #f3e5f5;
+        }
+        
+        .animated-icon1 span:nth-child(1) {
+        top: 0px;
+        }
+        
+        .animated-icon1 span:nth-child(2) {
+        top: 10px;
+        }
+        
+        .animated-icon1 span:nth-child(3) {
+        top: 20px;
+        }
+        
+        .animated-icon1.open span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        }
+        
+        .animated-icon1.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+        }
+        
+        .animated-icon1.open span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        }
+        
+        /* Icon 3*/
+        
+        .animated-icon2 span:nth-child(1) {
+        top: 0px;
+        }
+        
+        .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+        top: 10px;
+        }
+        
+        .animated-icon2 span:nth-child(4) {
+        top: 20px;
+        }
+        
+        .animated-icon2.open span:nth-child(1) {
+        top: 11px;
+        width: 0%;
+        left: 50%;
+        }
+        
+        .animated-icon2.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        }
+        
+        .animated-icon2.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        }
+        
+        .animated-icon2.open span:nth-child(4) {
+        top: 11px;
+        width: 0%;
+        left: 50%;
+        }
+}
+
+
+//SVE ZA HEADER
+.header{
+    .logo{
+        margin-top: -30px;
+        padding: 2%;
+    }
+    ul{
+        margin-top: 3%;
+        a:hover{
+            color: #b6912a;
+        }
+    }
+    margin: 0px auto;
+    margin-top: 2%;
+    //width: 90%;
+    a:active{
+        color: #4a87e4;
+    }
+    .navbar-brand{
+        font-size: 32px;
+    }
+    display: flex;
+    justify-content: space-around;
+    a{
+        font-size: 18px;
+        color: #000;
+    }
+    a:hover{
+        color: #000;
+    }
+    //width: 100%;
+   // margin: 0px auto;
+    //background-color: #fff;
+    //position:fixed;
+    //z-index:100;
+    //margin-top: 0%;
+}
+.nav-item a{
+    color: #000;
+}
+//KRAJ HEADERA
+
+//BGDEO POCETAK
+.sveplavo{
+    background-image: url("../img/index1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+.bgtamnoplava{
+    min-height: 200px;
+    //background-color: #3a99c5;
+    width: 100%;
+    h1{
+        text-align: center;
+        color: #fff;
+        padding-top: 12%;
+    }
+    form{
+        padding-top: 95px;
+        width: 60%;
+        margin: 0px auto;
+        input{
+            padding: 5%;
+        }
+    }
+}
+.bgsvetloplava{
+    display: flex;
+    justify-content: space-around;
+    min-height: 200px;
+    //background-color: #88c1db;
+    width: 100%;
+    .slika{
+        margin-left: 60px;
+        img{
+            border-radius: 30px 0px;
+            width: 250px;
+            height: 380px;
+        }
+        margin-top: 5%;
+    }
+    .text{
+        margin-top: 1%;
+        margin-left: 20%;
+        color: #fff;
+        width: 30%;
+    }
+    .skills{
+        margin-top: 5%;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+}
+//BGDEO KRAJ
+
+//kartica
+.kartica{
+    background-color: #304b61;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-around;
+    p{
+        font-size: 20px;
+    }
+    .naslov{
+        margin-top: 2.5%;
+        color: #fff;
+        h3{
+            margin-top: 5%;
+            font-size: 30px;
+        }
+    }
+    .pozivi{
+        margin-top: 2.5%;
+        color: #fff;
+        mark{
+            color: rgb(231, 157, 59);
+            background: none;
+            font-size: 45px;
+        }
+    }
+}
+//KRAJ KARTICA
+
+//pocetak blok deo
+.blok{
+    background-image: url("../img/blok.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    padding: 2.5%;
+    h3{
+        width: 55%;
+        margin: 0px auto;
+        color: #3076af;
+    }
+    .blok1{
+        margin-top: 4%;
+        margin-left: 15%;
+        width: 35%;
+        //margin: 0px auto;
+        h4{
+            color: #3076af;
+        }
+        p{
+            color: #7a7a7a;
+        }
+        i{
+            color: #f0c348;
+            padding: 2%;
+        }
+    }
+    .link{
+        float: right;
+        margin-right: 12%;
+        margin-top: 1%;
+        a{
+            font-size: 30px;
+            background-color: #f0c348;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: #e6ae16;
+        }
+    }
+}
+//kraj blok dela
+
+//pocetak zasto nas dela
+.zastonas{
+    background-color: #486d8b;
+    min-height: 300px;
+    .naslovzastonas{
+        text-align: center;
+        h3{
+            color: #dfdfdf;
+            padding: 2%;
+        }
+    }
+    .kartice{
+        padding: 2%;
+        margin-top: 2%;
+        .card{
+            border: none;
+            background-color: #486d8b;
+        }
+        i{
+            text-align: center;
+            font-size: 60px;
+            padding: 2%;
+            color: #b6912a;
+        }
+        h5{
+            text-align: center;
+            margin-top: 3%;
+            color: #dfdfdf;
+        }
+        a{
+            text-decoration: none;
+            color: #dfdfdf;
+            text-align: center;
+        }
+        /*a:hover{
+            text-decoration: none;
+            color: #e0bd2e;
+        }*/
+    }
+}
+// kraj zasto nas deo
+
+//pocetak onama deo index
+.onama{
+    display: flex;
+    justify-content: space-around;
+    .onamaimg{
+        margin-top: 3%;
+        img{
+            width: 600px;
+            height: 400px;
+        }
+    }
+    .onamatext{
+        background-color: rgba(236, 236, 236, 0.753);
+        padding: 2%;
+        margin-left: -25.5%;
+        font-size: 20px;
+        margin-top: 8%;
+        width: 40%;
+        p{
+            text-align: justify;
+            color: #858585;
+        }
+    }
+}//usluge pocetak
+.usluge{
+    .uslugenaslov{
+        text-align: center;
+        margin-top: 4%;
+        h3{
+            color: #b6912a;
+        }
+    }
+}
+//POCETAK usluge - KARTICA2
+.kartica2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: justify;
+    img{
+        height: 200px;
+    }
+    b{
+        color: #486d8b;
+    }
+}
+//KRAJ KARTICA2
+//NOVI FUTER
+.svefuter{
+    footer{
+        background-color: #1779c9; //#1d7eaa
+    }
+    line-height: 120px;
+    .ufuter{
+        line-height: 5px;
+        border-top: 1px solid #ffffff;
+    }
+    h5{
+        font-size: 30px;
+        color: #fff;
+    }
+    p{
+        font-size: 20px;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+    a:hover{
+        color: #3535a0;
+        text-decoration: none;
+    }
+    color: #fff;
+}
+//NOVI INFO
+.infosve{
+    color: #fff;
+    div{
+        background-color: #46b0e0;
+        border: none;
+    }
+    line-height: 70px;
+    margin-top: 3%;
+    h5{
+        font-size: 25px;
+    }
+    a{
+        font-size: 25px;
+    }
+}
+
+// HITNE INTERVENCIJE STRANA
+//BGDEO hitne intervencije POCETAK
+.sveplavohitne{
+    background-image: url("../img/bussines1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 543px;
+.bgtamnoplava{
+    min-height: 200px;
+    //background-color: #3a99c5;
+    width: 100%;
+    h1{
+        text-align: center;
+        color: #fff;
+        padding-top: 8%;
+    }
+    form{
+        padding-top: 25px;
+        width: 60%;
+        margin: 0px auto;
+        input{
+            border: 1px solid #858585;
+            padding: 5%;
+        }
+    }
+}
+.bgsvetloplava{
+    display: flex;
+    justify-content: space-around;
+    min-height: 200px;
+    width: 100%;
+    .link1{
+        text-align: center;
+        margin-top: 6%;
+        a{
+            font-size: 30px;
+            background-color: #f0c348;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: #e6ae16;
+        }
+    }
+    .slika{
+        margin-left: 60px;
+        img{
+            border-radius: 30px 0px;
+            width: 250px;
+            height: 380px;
+        }
+        margin-top: 5%;
+    }
+    .text{
+        color: #858585;
+        margin: 0px auto;
+        h2{
+            text-align: center;
+            margin: 0px auto;
+            width: 50%;
+        }
+        //margin-right: 18%;
+        margin-top: 3%;
+    }
+}
+}
+//BGDEO hitne intervencije KRAJ
+
+//hitne intervencije kartica
+.hitnekartice{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0px auto;
+    div{
+        h5{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    margin-top: 4%;
+}
+
+// JOB DONE DEO
+.jobdone{
+    background-image: url("../img/bussineshitne1risp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin-top: 4%;
+    h3{
+        padding-top: 4%;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+    }
+    p{
+        padding-top: 1%;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+    }
+    .i{
+        text-align: center;
+        margin-top: 2%;
+        font-size: 50px;
+        i{  
+            color: #b6912a;
+        }
+    }
+}
+
+//KRITIKE DEO INFO
+.infosve2{
+    margin: 4%;
+    div{
+        border: none;
+    }
+    h5{
+        font-size: 25px;
+    }
+    a{
+        margin-top: 2%;
+    }
+}
+
+//O NAMA DEO STRANA
+
+//O NAMA DEO
+.onamasve{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    h5{
+        font-size: 30px;
+    }
+    .onamasve1{
+        margin-left: 4%;
+    }
+}
+//FORMA
+form{
+    padding: 6%;
+}
+
+//KONTAKT STRANA
+.mapa{
+    text-align: center;
+}
+
+//RESPONSIVE
+@media (max-width:1250px){
+    .sveplavohitne{
+        .bgtamnoplava{
+            h1{
+                font-size: 30px;
+            }
+        }
+
+    }
+    .hitnekartice{
+        display: block;
+    }
+    .sveplavo{
+        .text{
+            h2{
+                width: 100%;
+                margin: 0 auto;
+                font-size: 25px;
+            }
+        }
+        .bgsvetloplava{
+            .skills{
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .mapa{
+        iframe{
+            width: 1000px;
+        }
+    }
+}
+@media (max-width:990px){
+    .jobdone{
+        background-image: url("../img/bussineshitne1risp990.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .onamasve{
+        display: block;
+    }
+    .sveplavohitne{
+        background-image: url("../img/bussinesrisp.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .velikifooter{
+        .infosve{
+            h5{
+                font-size: 20px;
+            }
+        }
+    }
+    .sveplavo{
+        .text{
+            h2{
+                width: 60%;
+                margin-left: 45%;
+                font-size: 20px;
+            }
+        }
+    }
+    .mapa{
+        iframe{
+            width: 800px;
+        }
+    }
+    .blok{
+        background-image: url("../img/blok800px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+    }
+
+    .onama{
+        display: block;
+        text-align: center;
+        img{
+            width: 550px !important;
+            height: 350px !important;
+            margin-bottom: 3%;
+        }
+        .onamatext{
+            margin-left: 0%;
+            width: 90%;
+            margin: 0px auto;
+        }
+    }
+}
+
+@media (max-width:650px){
+    .sveplavohitne{
+        background-image: url("../img/bussinesrisp650.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sveplavo{
+        .bgtamnoplava{
+            form{
+                width: 100%;
+                margin-top: -2%;
+            }
+            h1{
+                font-size: 30px;
+                padding-top: 35%;
+            }
+        }
+    }
+    .mapa{
+        iframe{
+            width: 600px;
+        }
+    }
+    .blok{
+        background-image: url("../img/blok\ 600px.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100px;
+        h3{
+            font-size: 21px;
+            width: 65%;
+            float: left;
+            padding: 3%;
+        }
+        .blok1{
+            margin-left: -1%;
+            h4{
+                font-size: 20px;
+                padding: 3%;
+            }
+            p{
+                padding: 3%;
+            }
+        }
+        .link{
+            margin-top: -11%;
+            margin-right: 20%;
+        }
+    }
+    .kartica{
+        margin-top: -5%;
+        display: block;
+        text-align: center;
+        padding: 0.5%;
+    }
+}
+
+@media (max-width:550px){
+    .jobdone{
+        background-image: url("../img/bussineshitne1risp550.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        h3{
+            font-size: 23px;
+            padding-top: 20%;
+        }
+    }
+    .sveplavo{
+        .bgsvetloplava{
+            .text{
+                h2{
+                    display: none;
+                }
+            }
+        }
+    }
+    .mapa{
+        iframe{
+            width: 450px;
+        }
+    }
+    .blok{
+        background-image: url("../img/blok550.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100px;
+        .blok1{
+            background-color: #46afe09c;
+            text-align: center;
+            //margin-left: 50px;
+            width: 80%;
+            margin: 0 auto;
+            h4{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        h3{
+            display: none;
+        }
+        .link{
+            margin-top: 3%;
+            padding: 2%;
+            margin-right: 135px;
+            margin-bottom: 5%;
+        }
+    }
+    .onama{
+        img{
+            width: 400px !important;
+            height: 300px !important;
+        }
+    }
+}
+
+@media (max-width:450px){
+    .jobdone{
+        background-image: url("../img/bussineshitne1risp450.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        h3{
+            padding-top: 30% !important;
+            font-size: 23px;
+        }
+        i{
+            display: none;
+        }
+    }
+    .sveplavohitne{
+        background-image: url("../img/bussinesrisp450.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .bgtamnoplava{
+            h1{
+                font-size: 30px;
+            }
+            form{
+                width: 100%;
+            }
+        }
+        .bgsvetloplava{
+            .text{
+                h2{
+                    margin-top: 10%;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .mapa{
+        iframe{
+            width: 350px;
+        }
+    }
+    .sveplavo{
+        background-image: url("../img/index1ress.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 750px;
+        .bgsvetloplava{
+            .skills{
+                h2{
+                    font-size: 14px;
+                    margin-top: 7%;
+                }
+                progress{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .blok{
+        background-image: url("../img/blokindeks.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100px;
+        .blok1{
+            background-color: #46afe09c;
+            text-align: center;
+            //margin-left: 50px;
+            width: 90%;
+            margin: 0 auto;
+            h4{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        h3{
+            display: none;
+        }
+        .link{
+            margin-top: 5%;
+            padding: 4%;
+            margin-right: 100px;
+        }
+    }
+    .onama{
+        img{
+            width: 300px !important;
+            height: 200px !important;
+        }
+    }
+}
+
+@media (max-width:380px){
+    .jobdone{
+        background-image: url("../img/bussineshitne1risp350.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        h3{
+            padding-top: 33% !important;
+            font-size: 23px;
+        }
+        i{
+            display: none;
+        }
+    }
+    .sveplavohitne{
+        background-image: url("../img/bussinesrisp350.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .bgtamnoplava{
+            h1{
+                font-size: 30px;
+            }
+            form{
+                width: 100%;
+            }
+        }
+        .bgsvetloplava{
+            .text{
+                h2{
+                    margin-top: 20%;
+                    font-size: 20px;
+                }
+                .link1{
+                    a{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .sveplavo{
+        .bgtamnoplava{
+            h1{
+                font-size: 25px;
+                padding-top: 35%;
+            }
+        }
+        .bgsvetloplava{
+            .skills{
+                h2{
+                    font-size: 14px;
+                }
+                progress{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .mapa{
+        iframe{
+            width: 300px;
+        }
+    }
+    .kartica{
+        margin-top: -5%;
+        display: block;
+        text-align: center;
+        padding: 0.5%;
+        .pozivi{
+            p{
+                mark{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .blok{
+        background-image: url("../img/blokindeks350.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100px;
+        .blok1{
+            background-color: #46afe09c;
+            text-align: center;
+            //margin-left: 50px;
+            width: 100%;
+            margin: 0 auto;
+            h4{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        h3{
+            display: none;
+        }
+        .link{
+            margin-top: 5%;
+            padding: 4%;
+            margin-right: 85px;
+            width: 47%;
+            a{
+                
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

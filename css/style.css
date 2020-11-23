@@ -1,0 +1,966 @@
+.cleaner {
+  clear: both;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Icon 1 */
+.navrisponsive {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    display: none !important;
+  }
+  .navrisponsive {
+    display: inline;
+  }
+  .animated-icon1, .animated-icon2, .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  .animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  .animated-icon1 span {
+    background: #e65100;
+  }
+  .animated-icon2 span {
+    background: #e3f2fd;
+  }
+  .animated-icon3 span {
+    background: #f3e5f5;
+  }
+  .animated-icon1 span:nth-child(1) {
+    top: 0px;
+  }
+  .animated-icon1 span:nth-child(2) {
+    top: 10px;
+  }
+  .animated-icon1 span:nth-child(3) {
+    top: 20px;
+  }
+  .animated-icon1.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  .animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  .animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  /* Icon 3*/
+  .animated-icon2 span:nth-child(1) {
+    top: 0px;
+  }
+  .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+    top: 10px;
+  }
+  .animated-icon2 span:nth-child(4) {
+    top: 20px;
+  }
+  .animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+  .animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+}
+
+.header {
+  margin: 0px auto;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .logo {
+  margin-top: -30px;
+  padding: 2%;
+}
+
+.header ul {
+  margin-top: 3%;
+}
+
+.header ul a:hover {
+  color: #b6912a;
+}
+
+.header a:active {
+  color: #4a87e4;
+}
+
+.header .navbar-brand {
+  font-size: 32px;
+}
+
+.header a {
+  font-size: 18px;
+  color: #000;
+}
+
+.header a:hover {
+  color: #000;
+}
+
+.nav-item a {
+  color: #000;
+}
+
+.sveplavo {
+  background-image: url("../img/index1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+}
+
+.sveplavo .bgtamnoplava {
+  min-height: 200px;
+  width: 100%;
+}
+
+.sveplavo .bgtamnoplava h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 12%;
+}
+
+.sveplavo .bgtamnoplava form {
+  padding-top: 95px;
+  width: 60%;
+  margin: 0px auto;
+}
+
+.sveplavo .bgtamnoplava form input {
+  padding: 5%;
+}
+
+.sveplavo .bgsvetloplava {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 200px;
+  width: 100%;
+}
+
+.sveplavo .bgsvetloplava .slika {
+  margin-left: 60px;
+  margin-top: 5%;
+}
+
+.sveplavo .bgsvetloplava .slika img {
+  border-radius: 30px 0px;
+  width: 250px;
+  height: 380px;
+}
+
+.sveplavo .bgsvetloplava .text {
+  margin-top: 1%;
+  margin-left: 20%;
+  color: #fff;
+  width: 30%;
+}
+
+.sveplavo .bgsvetloplava .skills {
+  margin-top: 5%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.kartica {
+  background-color: #304b61;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.kartica p {
+  font-size: 20px;
+}
+
+.kartica .naslov {
+  margin-top: 2.5%;
+  color: #fff;
+}
+
+.kartica .naslov h3 {
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+.kartica .pozivi {
+  margin-top: 2.5%;
+  color: #fff;
+}
+
+.kartica .pozivi mark {
+  color: #e79d3b;
+  background: none;
+  font-size: 45px;
+}
+
+.blok {
+  background-image: url("../img/blok.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  padding: 2.5%;
+}
+
+.blok h3 {
+  width: 55%;
+  margin: 0px auto;
+  color: #3076af;
+}
+
+.blok .blok1 {
+  margin-top: 4%;
+  margin-left: 15%;
+  width: 35%;
+}
+
+.blok .blok1 h4 {
+  color: #3076af;
+}
+
+.blok .blok1 p {
+  color: #7a7a7a;
+}
+
+.blok .blok1 i {
+  color: #f0c348;
+  padding: 2%;
+}
+
+.blok .link {
+  float: right;
+  margin-right: 12%;
+  margin-top: 1%;
+}
+
+.blok .link a {
+  font-size: 30px;
+  background-color: #f0c348;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.blok .link a:hover {
+  background-color: #e6ae16;
+}
+
+.zastonas {
+  background-color: #486d8b;
+  min-height: 300px;
+}
+
+.zastonas .naslovzastonas {
+  text-align: center;
+}
+
+.zastonas .naslovzastonas h3 {
+  color: #dfdfdf;
+  padding: 2%;
+}
+
+.zastonas .kartice {
+  padding: 2%;
+  margin-top: 2%;
+  /*a:hover{
+            text-decoration: none;
+            color: #e0bd2e;
+        }*/
+}
+
+.zastonas .kartice .card {
+  border: none;
+  background-color: #486d8b;
+}
+
+.zastonas .kartice i {
+  text-align: center;
+  font-size: 60px;
+  padding: 2%;
+  color: #b6912a;
+}
+
+.zastonas .kartice h5 {
+  text-align: center;
+  margin-top: 3%;
+  color: #dfdfdf;
+}
+
+.zastonas .kartice a {
+  text-decoration: none;
+  color: #dfdfdf;
+  text-align: center;
+}
+
+.onama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.onama .onamaimg {
+  margin-top: 3%;
+}
+
+.onama .onamaimg img {
+  width: 600px;
+  height: 400px;
+}
+
+.onama .onamatext {
+  background-color: rgba(236, 236, 236, 0.753);
+  padding: 2%;
+  margin-left: -25.5%;
+  font-size: 20px;
+  margin-top: 8%;
+  width: 40%;
+}
+
+.onama .onamatext p {
+  text-align: justify;
+  color: #858585;
+}
+
+.usluge .uslugenaslov {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.usluge .uslugenaslov h3 {
+  color: #b6912a;
+}
+
+.kartica2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+  padding: 2%;
+  text-align: justify;
+}
+
+.kartica2 img {
+  height: 200px;
+}
+
+.kartica2 b {
+  color: #486d8b;
+}
+
+.svefuter {
+  line-height: 120px;
+  color: #fff;
+}
+
+.svefuter footer {
+  background-color: #1779c9;
+}
+
+.svefuter .ufuter {
+  line-height: 5px;
+  border-top: 1px solid #ffffff;
+}
+
+.svefuter h5 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.svefuter p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.svefuter a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.svefuter a:hover {
+  color: #3535a0;
+  text-decoration: none;
+}
+
+.infosve {
+  color: #fff;
+  line-height: 70px;
+  margin-top: 3%;
+}
+
+.infosve div {
+  background-color: #46b0e0;
+  border: none;
+}
+
+.infosve h5 {
+  font-size: 25px;
+}
+
+.infosve a {
+  font-size: 25px;
+}
+
+.sveplavohitne {
+  background-image: url("../img/bussines1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 543px;
+}
+
+.sveplavohitne .bgtamnoplava {
+  min-height: 200px;
+  width: 100%;
+}
+
+.sveplavohitne .bgtamnoplava h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 8%;
+}
+
+.sveplavohitne .bgtamnoplava form {
+  padding-top: 25px;
+  width: 60%;
+  margin: 0px auto;
+}
+
+.sveplavohitne .bgtamnoplava form input {
+  border: 1px solid #858585;
+  padding: 5%;
+}
+
+.sveplavohitne .bgsvetloplava {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 200px;
+  width: 100%;
+}
+
+.sveplavohitne .bgsvetloplava .link1 {
+  text-align: center;
+  margin-top: 6%;
+}
+
+.sveplavohitne .bgsvetloplava .link1 a {
+  font-size: 30px;
+  background-color: #f0c348;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sveplavohitne .bgsvetloplava .link1 a:hover {
+  background-color: #e6ae16;
+}
+
+.sveplavohitne .bgsvetloplava .slika {
+  margin-left: 60px;
+  margin-top: 5%;
+}
+
+.sveplavohitne .bgsvetloplava .slika img {
+  border-radius: 30px 0px;
+  width: 250px;
+  height: 380px;
+}
+
+.sveplavohitne .bgsvetloplava .text {
+  color: #858585;
+  margin: 0px auto;
+  margin-top: 3%;
+}
+
+.sveplavohitne .bgsvetloplava .text h2 {
+  text-align: center;
+  margin: 0px auto;
+  width: 50%;
+}
+
+.hitnekartice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 4%;
+}
+
+.hitnekartice div h5 {
+  font-size: 25px;
+}
+
+.hitnekartice div p {
+  font-size: 20px;
+}
+
+.jobdone {
+  background-image: url("../img/bussineshitne1risp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  margin-top: 4%;
+}
+
+.jobdone h3 {
+  padding-top: 4%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.jobdone p {
+  padding-top: 1%;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.jobdone .i {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 50px;
+}
+
+.jobdone .i i {
+  color: #b6912a;
+}
+
+.infosve2 {
+  margin: 4%;
+}
+
+.infosve2 div {
+  border: none;
+}
+
+.infosve2 h5 {
+  font-size: 25px;
+}
+
+.infosve2 a {
+  margin-top: 2%;
+}
+
+.onamasve {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: justify;
+}
+
+.onamasve h5 {
+  font-size: 30px;
+}
+
+.onamasve .onamasve1 {
+  margin-left: 4%;
+}
+
+form {
+  padding: 6%;
+}
+
+.mapa {
+  text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .sveplavohitne .bgtamnoplava h1 {
+    font-size: 30px;
+  }
+  .hitnekartice {
+    display: block;
+  }
+  .sveplavo .text h2 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+  }
+  .sveplavo .bgsvetloplava .skills h2 {
+    font-size: 20px;
+  }
+  .mapa iframe {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 990px) {
+  .jobdone {
+    background-image: url("../img/bussineshitne1risp990.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .onamasve {
+    display: block;
+  }
+  .sveplavohitne {
+    background-image: url("../img/bussinesrisp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .velikifooter .infosve h5 {
+    font-size: 20px;
+  }
+  .sveplavo .text h2 {
+    width: 60%;
+    margin-left: 45%;
+    font-size: 20px;
+  }
+  .mapa iframe {
+    width: 800px;
+  }
+  .blok {
+    background-image: url("../img/blok800px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+  }
+  .onama {
+    display: block;
+    text-align: center;
+  }
+  .onama img {
+    width: 550px !important;
+    height: 350px !important;
+    margin-bottom: 3%;
+  }
+  .onama .onamatext {
+    margin-left: 0%;
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .sveplavohitne {
+    background-image: url("../img/bussinesrisp650.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sveplavo .bgtamnoplava form {
+    width: 100%;
+    margin-top: -2%;
+  }
+  .sveplavo .bgtamnoplava h1 {
+    font-size: 30px;
+    padding-top: 35%;
+  }
+  .mapa iframe {
+    width: 600px;
+  }
+  .blok {
+    background-image: url("../img/blok 600px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+  }
+  .blok h3 {
+    font-size: 21px;
+    width: 65%;
+    float: left;
+    padding: 3%;
+  }
+  .blok .blok1 {
+    margin-left: -1%;
+  }
+  .blok .blok1 h4 {
+    font-size: 20px;
+    padding: 3%;
+  }
+  .blok .blok1 p {
+    padding: 3%;
+  }
+  .blok .link {
+    margin-top: -11%;
+    margin-right: 20%;
+  }
+  .kartica {
+    margin-top: -5%;
+    display: block;
+    text-align: center;
+    padding: 0.5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .jobdone {
+    background-image: url("../img/bussineshitne1risp550.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .jobdone h3 {
+    font-size: 23px;
+    padding-top: 20%;
+  }
+  .sveplavo .bgsvetloplava .text h2 {
+    display: none;
+  }
+  .mapa iframe {
+    width: 450px;
+  }
+  .blok {
+    background-image: url("../img/blok550.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+  }
+  .blok .blok1 {
+    background-color: #46afe09c;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .blok .blok1 h4 {
+    color: #fff;
+  }
+  .blok .blok1 p {
+    color: #fff;
+  }
+  .blok h3 {
+    display: none;
+  }
+  .blok .link {
+    margin-top: 3%;
+    padding: 2%;
+    margin-right: 135px;
+    margin-bottom: 5%;
+  }
+  .onama img {
+    width: 400px !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .jobdone {
+    background-image: url("../img/bussineshitne1risp450.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .jobdone h3 {
+    padding-top: 30% !important;
+    font-size: 23px;
+  }
+  .jobdone i {
+    display: none;
+  }
+  .sveplavohitne {
+    background-image: url("../img/bussinesrisp450.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sveplavohitne .bgtamnoplava h1 {
+    font-size: 30px;
+  }
+  .sveplavohitne .bgtamnoplava form {
+    width: 100%;
+  }
+  .sveplavohitne .bgsvetloplava .text h2 {
+    margin-top: 10%;
+    font-size: 20px;
+  }
+  .mapa iframe {
+    width: 350px;
+  }
+  .sveplavo {
+    background-image: url("../img/index1ress.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+  }
+  .sveplavo .bgsvetloplava .skills h2 {
+    font-size: 14px;
+    margin-top: 7%;
+  }
+  .sveplavo .bgsvetloplava .skills progress {
+    font-size: 15px;
+  }
+  .blok {
+    background-image: url("../img/blokindeks.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+  }
+  .blok .blok1 {
+    background-color: #46afe09c;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .blok .blok1 h4 {
+    color: #fff;
+  }
+  .blok .blok1 p {
+    color: #fff;
+  }
+  .blok h3 {
+    display: none;
+  }
+  .blok .link {
+    margin-top: 5%;
+    padding: 4%;
+    margin-right: 100px;
+  }
+  .onama img {
+    width: 300px !important;
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .jobdone {
+    background-image: url("../img/bussineshitne1risp350.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .jobdone h3 {
+    padding-top: 33% !important;
+    font-size: 23px;
+  }
+  .jobdone i {
+    display: none;
+  }
+  .sveplavohitne {
+    background-image: url("../img/bussinesrisp350.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sveplavohitne .bgtamnoplava h1 {
+    font-size: 30px;
+  }
+  .sveplavohitne .bgtamnoplava form {
+    width: 100%;
+  }
+  .sveplavohitne .bgsvetloplava .text h2 {
+    margin-top: 20%;
+    font-size: 20px;
+  }
+  .sveplavohitne .bgsvetloplava .text .link1 a {
+    font-size: 25px;
+  }
+  .sveplavo .bgtamnoplava h1 {
+    font-size: 25px;
+    padding-top: 35%;
+  }
+  .sveplavo .bgsvetloplava .skills h2 {
+    font-size: 14px;
+  }
+  .sveplavo .bgsvetloplava .skills progress {
+    font-size: 15px;
+  }
+  .mapa iframe {
+    width: 300px;
+  }
+  .kartica {
+    margin-top: -5%;
+    display: block;
+    text-align: center;
+    padding: 0.5%;
+  }
+  .kartica .pozivi p mark {
+    font-size: 30px;
+  }
+  .blok {
+    background-image: url("../img/blokindeks350.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+  }
+  .blok .blok1 {
+    background-color: #46afe09c;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .blok .blok1 h4 {
+    color: #fff;
+  }
+  .blok .blok1 p {
+    color: #fff;
+  }
+  .blok h3 {
+    display: none;
+  }
+  .blok .link {
+    margin-top: 5%;
+    padding: 4%;
+    margin-right: 85px;
+    width: 47%;
+  }
+  .blok .link a {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
