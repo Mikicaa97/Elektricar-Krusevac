@@ -776,16 +776,16 @@ form {
     min-height: 100px;
   }
   .blok .blok1 {
-    background-color: #9babb354;
+    background-color: #2727275b;
     text-align: center;
     width: 80%;
     margin: 0 auto;
   }
   .blok .blok1 h4 {
-    color: #858585;
+    color: #e2e2e2;
   }
   .blok .blok1 p {
-    color: #969696;
+    color: #e0e0e0;
   }
   .blok h3 {
     display: none;
@@ -853,16 +853,16 @@ form {
     min-height: 100px;
   }
   .blok .blok1 {
-    background-color: #9babb354;
+    background-color: #2727275b;
     text-align: center;
     width: 90%;
     margin: 0 auto;
   }
   .blok .blok1 h4 {
-    color: #858585;
+    color: #e2e2e2;
   }
   .blok .blok1 p {
-    color: #969696;
+    color: #e0e0e0;
   }
   .blok h3 {
     display: none;
@@ -938,16 +938,19 @@ form {
     min-height: 100px;
   }
   .blok .blok1 {
-    background-color: #9ba3a744;
+    background-color: #2727275b;
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    border-radius: 4px;
   }
   .blok .blok1 h4 {
-    color: #474747;
+    color: #e2e2e2;
+    font-size: 23px;
   }
   .blok .blok1 p {
-    color: #5a5a5a;
+    color: #e0e0e0;
+    font-size: 16px;
   }
   .blok h3 {
     display: none;
