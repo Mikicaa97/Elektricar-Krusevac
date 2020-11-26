@@ -360,8 +360,13 @@
 }
 
 .onama .onamaimg img {
+  border-radius: 4px;
   width: 600px;
   height: 400px;
+}
+
+.onama .onamaimg img:hover {
+  border: 2px solid #1779c9;
 }
 
 .onama .onamatext {
@@ -399,7 +404,12 @@
 }
 
 .kartica2 img {
+  border-radius: 4px;
   height: 200px;
+}
+
+.kartica2 img:hover {
+  border: 2px solid #1779c9;
 }
 
 .kartica2 b {
